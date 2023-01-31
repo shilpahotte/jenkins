@@ -1,23 +1,25 @@
 pipeline {
         agent {
-             label {
-                      label "built-in"
+		     label "built-in"
+		
+		
+		
+		}
+		
+		stages {
+		      stage ('stage-1') {
+			       steps {
+				       echo "hello all this is master branch"
+				   
+				   
+				   }
+			  
+			  
+			  
+			  }
+		
+		
+		}
 
-                }
-                }
-        stages {
-                      stage ('mkdir') {
-                             steps {
-                                      sh "sudo mkdir aws"
-                                 }
-
-                          }
-
-
-
-
-                }
 
 }
-
-
